@@ -102,12 +102,11 @@
 		9622DAE01F60B6C200D6AE3D /* IVYRxPhotos */ = {
 			isa = PBXGroup;
 			children = (
-				9622DAE11F60B6C200D6AE3D /* AppDelegate.swift */,
-				9622DB051F60B90900D6AE3D /* Controller */,
+				9622DB081F60B9D300D6AE3D /* Model */,
 				9622DB041F60B8F800D6AE3D /* View */,
-				9622DAF01F60B6C200D6AE3D /* Info.plist */,
-				9622DAE81F60B6C200D6AE3D /* IVYRxPhotos.xcdatamodeld */,
-				9622DB061F60B93400D6AE3D /* Photo.swift */,
+				9622DB051F60B90900D6AE3D /* Controller */,
+				9622DB091F60B9DD00D6AE3D /* Cache */,
+				9622DB0A1F60BA3400D6AE3D /* Supporting Files */,
 			);
 			path = IVYRxPhotos;
 			sourceTree = "<group>";
@@ -125,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				9622DAE51F60B6C200D6AE3D /* Main.storyboard */,
-				9622DAEB1F60B6C200D6AE3D /* Assets.xcassets */,
 				9622DAED1F60B6C200D6AE3D /* LaunchScreen.storyboard */,
 			);
 			name = View;
@@ -137,6 +135,32 @@
 				9622DAE31F60B6C200D6AE3D /* ViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		9622DB081F60B9D300D6AE3D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9622DB061F60B93400D6AE3D /* Photo.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9622DB091F60B9DD00D6AE3D /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				9622DAE81F60B6C200D6AE3D /* IVYRxPhotos.xcdatamodeld */,
+			);
+			name = Cache;
+			sourceTree = "<group>";
+		};
+		9622DB0A1F60BA3400D6AE3D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9622DAE11F60B6C200D6AE3D /* AppDelegate.swift */,
+				9622DAEB1F60B6C200D6AE3D /* Assets.xcassets */,
+				9622DAF01F60B6C200D6AE3D /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D7BCD3F3C00B7A003F5A1667 /* Pods */ = {
