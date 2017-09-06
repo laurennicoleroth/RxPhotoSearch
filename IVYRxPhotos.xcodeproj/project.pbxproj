@@ -15,6 +15,7 @@
 		9622DAEC1F60B6C200D6AE3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9622DAEB1F60B6C200D6AE3D /* Assets.xcassets */; };
 		9622DAEF1F60B6C200D6AE3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9622DAED1F60B6C200D6AE3D /* LaunchScreen.storyboard */; };
 		9622DAFA1F60B6C200D6AE3D /* IVYRxPhotosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9622DAF91F60B6C200D6AE3D /* IVYRxPhotosTests.swift */; };
+		9622DB071F60B93400D6AE3D /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9622DB061F60B93400D6AE3D /* Photo.swift */; };
 		CD17EB72CAF5FABC84FD2D50 /* Pods_IVYRxPhotos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768E36C7B27B4192F30C9DDE /* Pods_IVYRxPhotos.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		9622DAF51F60B6C200D6AE3D /* IVYRxPhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IVYRxPhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9622DAF91F60B6C200D6AE3D /* IVYRxPhotosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IVYRxPhotosTests.swift; sourceTree = "<group>"; };
 		9622DAFB1F60B6C200D6AE3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9622DB061F60B93400D6AE3D /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		9CB353A85C1AC49892CA4FFF /* Pods-IVYRxPhotosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVYRxPhotosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IVYRxPhotosTests/Pods-IVYRxPhotosTests.release.xcconfig"; sourceTree = "<group>"; };
 		DFD8A075053AF94B6E589431 /* Pods-IVYRxPhotos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVYRxPhotos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IVYRxPhotos/Pods-IVYRxPhotos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,12 +103,11 @@
 			isa = PBXGroup;
 			children = (
 				9622DAE11F60B6C200D6AE3D /* AppDelegate.swift */,
-				9622DAE31F60B6C200D6AE3D /* ViewController.swift */,
-				9622DAE51F60B6C200D6AE3D /* Main.storyboard */,
-				9622DAEB1F60B6C200D6AE3D /* Assets.xcassets */,
-				9622DAED1F60B6C200D6AE3D /* LaunchScreen.storyboard */,
+				9622DB051F60B90900D6AE3D /* Controller */,
+				9622DB041F60B8F800D6AE3D /* View */,
 				9622DAF01F60B6C200D6AE3D /* Info.plist */,
 				9622DAE81F60B6C200D6AE3D /* IVYRxPhotos.xcdatamodeld */,
+				9622DB061F60B93400D6AE3D /* Photo.swift */,
 			);
 			path = IVYRxPhotos;
 			sourceTree = "<group>";
@@ -118,6 +119,24 @@
 				9622DAFB1F60B6C200D6AE3D /* Info.plist */,
 			);
 			path = IVYRxPhotosTests;
+			sourceTree = "<group>";
+		};
+		9622DB041F60B8F800D6AE3D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9622DAE51F60B6C200D6AE3D /* Main.storyboard */,
+				9622DAEB1F60B6C200D6AE3D /* Assets.xcassets */,
+				9622DAED1F60B6C200D6AE3D /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9622DB051F60B90900D6AE3D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9622DAE31F60B6C200D6AE3D /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		D7BCD3F3C00B7A003F5A1667 /* Pods */ = {
@@ -352,6 +371,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9622DB071F60B93400D6AE3D /* Photo.swift in Sources */,
 				9622DAE41F60B6C200D6AE3D /* ViewController.swift in Sources */,
 				9622DAEA1F60B6C200D6AE3D /* IVYRxPhotos.xcdatamodeld in Sources */,
 				9622DAE21F60B6C200D6AE3D /* AppDelegate.swift in Sources */,
@@ -568,6 +588,7 @@
 				9622DB001F60B6C200D6AE3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9622DB011F60B6C200D6AE3D /* Build configuration list for PBXNativeTarget "IVYRxPhotosTests" */ = {
 			isa = XCConfigurationList;
@@ -576,6 +597,7 @@
 				9622DB031F60B6C200D6AE3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
