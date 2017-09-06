@@ -16,6 +16,7 @@
 		9622DAFA1F60B6C200D6AE3D /* IVYRxPhotosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9622DAF91F60B6C200D6AE3D /* IVYRxPhotosTests.swift */; };
 		9622DB071F60B93400D6AE3D /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9622DB061F60B93400D6AE3D /* Photo.swift */; };
 		9622DB0C1F60BB9800D6AE3D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9622DB0B1F60BB9800D6AE3D /* SearchViewController.swift */; };
+		9622DB0E1F60BF0600D6AE3D /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9622DB0D1F60BF0600D6AE3D /* SearchViewModel.swift */; };
 		CD17EB72CAF5FABC84FD2D50 /* Pods_IVYRxPhotos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768E36C7B27B4192F30C9DDE /* Pods_IVYRxPhotos.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		9622DAFB1F60B6C200D6AE3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9622DB061F60B93400D6AE3D /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		9622DB0B1F60BB9800D6AE3D /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		9622DB0D1F60BF0600D6AE3D /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		9CB353A85C1AC49892CA4FFF /* Pods-IVYRxPhotosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVYRxPhotosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IVYRxPhotosTests/Pods-IVYRxPhotosTests.release.xcconfig"; sourceTree = "<group>"; };
 		DFD8A075053AF94B6E589431 /* Pods-IVYRxPhotos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVYRxPhotos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IVYRxPhotos/Pods-IVYRxPhotos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +109,7 @@
 				9622DB051F60B90900D6AE3D /* Controller */,
 				9622DB091F60B9DD00D6AE3D /* Cache */,
 				9622DB0A1F60BA3400D6AE3D /* Supporting Files */,
+				9622DB0D1F60BF0600D6AE3D /* SearchViewModel.swift */,
 			);
 			path = IVYRxPhotos;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9622DB0C1F60BB9800D6AE3D /* SearchViewController.swift in Sources */,
+				9622DB0E1F60BF0600D6AE3D /* SearchViewModel.swift in Sources */,
 				9622DB071F60B93400D6AE3D /* Photo.swift in Sources */,
 				9622DAEA1F60B6C200D6AE3D /* IVYRxPhotos.xcdatamodeld in Sources */,
 				9622DAE21F60B6C200D6AE3D /* AppDelegate.swift in Sources */,

@@ -101,7 +101,7 @@
                             <constraint firstItem="oa5-vQ-Ujd" firstAttribute="leading" secondItem="ebX-hn-Hsm" secondAttribute="leadingMargin" constant="-16" id="vAv-In-oZw"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="qWX-FI-4JB"/>
+                    <navigationItem key="navigationItem" title="Photo Search" id="qWX-FI-4JB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
