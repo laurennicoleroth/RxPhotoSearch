@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		300939A51731F8BE3890AD8E /* Pods_IVYRxPhotosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B531D26269D7EE24D6059C1 /* Pods_IVYRxPhotosTests.framework */; };
 		9622DAE21F60B6C200D6AE3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9622DAE11F60B6C200D6AE3D /* AppDelegate.swift */; };
 		9622DAE41F60B6C200D6AE3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9622DAE31F60B6C200D6AE3D /* ViewController.swift */; };
 		9622DAE71F60B6C200D6AE3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9622DAE51F60B6C200D6AE3D /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		9622DAEC1F60B6C200D6AE3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9622DAEB1F60B6C200D6AE3D /* Assets.xcassets */; };
 		9622DAEF1F60B6C200D6AE3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9622DAED1F60B6C200D6AE3D /* LaunchScreen.storyboard */; };
 		9622DAFA1F60B6C200D6AE3D /* IVYRxPhotosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9622DAF91F60B6C200D6AE3D /* IVYRxPhotosTests.swift */; };
+		CD17EB72CAF5FABC84FD2D50 /* Pods_IVYRxPhotos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768E36C7B27B4192F30C9DDE /* Pods_IVYRxPhotos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		751BC1AC58F488615106A0D7 /* Pods-IVYRxPhotosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVYRxPhotosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IVYRxPhotosTests/Pods-IVYRxPhotosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		768E36C7B27B4192F30C9DDE /* Pods_IVYRxPhotos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IVYRxPhotos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B531D26269D7EE24D6059C1 /* Pods_IVYRxPhotosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IVYRxPhotosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BDDE37D56345D4BA30884FC /* Pods-IVYRxPhotos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVYRxPhotos.release.xcconfig"; path = "Pods/Target Support Files/Pods-IVYRxPhotos/Pods-IVYRxPhotos.release.xcconfig"; sourceTree = "<group>"; };
 		9622DADE1F60B6C200D6AE3D /* IVYRxPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IVYRxPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9622DAE11F60B6C200D6AE3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9622DAE31F60B6C200D6AE3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +44,8 @@
 		9622DAF51F60B6C200D6AE3D /* IVYRxPhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IVYRxPhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9622DAF91F60B6C200D6AE3D /* IVYRxPhotosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IVYRxPhotosTests.swift; sourceTree = "<group>"; };
 		9622DAFB1F60B6C200D6AE3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CB353A85C1AC49892CA4FFF /* Pods-IVYRxPhotosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVYRxPhotosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IVYRxPhotosTests/Pods-IVYRxPhotosTests.release.xcconfig"; sourceTree = "<group>"; };
+		DFD8A075053AF94B6E589431 /* Pods-IVYRxPhotos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVYRxPhotos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IVYRxPhotos/Pods-IVYRxPhotos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD17EB72CAF5FABC84FD2D50 /* Pods_IVYRxPhotos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +61,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				300939A51731F8BE3890AD8E /* Pods_IVYRxPhotosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C08583B3C466F8EF56C3D29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				768E36C7B27B4192F30C9DDE /* Pods_IVYRxPhotos.framework */,
+				7B531D26269D7EE24D6059C1 /* Pods_IVYRxPhotosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9622DAD51F60B6C200D6AE3D = {
 			isa = PBXGroup;
 			children = (
 				9622DAE01F60B6C200D6AE3D /* IVYRxPhotos */,
 				9622DAF81F60B6C200D6AE3D /* IVYRxPhotosTests */,
 				9622DADF1F60B6C200D6AE3D /* Products */,
+				D7BCD3F3C00B7A003F5A1667 /* Pods */,
+				4C08583B3C466F8EF56C3D29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +120,17 @@
 			path = IVYRxPhotosTests;
 			sourceTree = "<group>";
 		};
+		D7BCD3F3C00B7A003F5A1667 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DFD8A075053AF94B6E589431 /* Pods-IVYRxPhotos.debug.xcconfig */,
+				8BDDE37D56345D4BA30884FC /* Pods-IVYRxPhotos.release.xcconfig */,
+				751BC1AC58F488615106A0D7 /* Pods-IVYRxPhotosTests.debug.xcconfig */,
+				9CB353A85C1AC49892CA4FFF /* Pods-IVYRxPhotosTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +138,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9622DAFE1F60B6C200D6AE3D /* Build configuration list for PBXNativeTarget "IVYRxPhotos" */;
 			buildPhases = (
+				ECC9E848E9F816F5F08CF291 /* [CP] Check Pods Manifest.lock */,
 				9622DADA1F60B6C200D6AE3D /* Sources */,
 				9622DADB1F60B6C200D6AE3D /* Frameworks */,
 				9622DADC1F60B6C200D6AE3D /* Resources */,
+				02CD21AEF1321584706BD8D9 /* [CP] Embed Pods Frameworks */,
+				0B3B22D813B61A73BFB9E670 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9622DB011F60B6C200D6AE3D /* Build configuration list for PBXNativeTarget "IVYRxPhotosTests" */;
 			buildPhases = (
+				6CB75F83FF5A817624C17F40 /* [CP] Check Pods Manifest.lock */,
 				9622DAF11F60B6C200D6AE3D /* Sources */,
 				9622DAF21F60B6C200D6AE3D /* Frameworks */,
 				9622DAF31F60B6C200D6AE3D /* Resources */,
+				1D16611B726F815E5A757729 /* [CP] Embed Pods Frameworks */,
+				F22276B914352A47F933602C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,6 +236,116 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02CD21AEF1321584706BD8D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IVYRxPhotos/Pods-IVYRxPhotos-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IVYRxPhotos/Pods-IVYRxPhotos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0B3B22D813B61A73BFB9E670 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IVYRxPhotos/Pods-IVYRxPhotos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D16611B726F815E5A757729 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IVYRxPhotosTests/Pods-IVYRxPhotosTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CB75F83FF5A817624C17F40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IVYRxPhotosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECC9E848E9F816F5F08CF291 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IVYRxPhotos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F22276B914352A47F933602C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IVYRxPhotosTests/Pods-IVYRxPhotosTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9622DADA1F60B6C200D6AE3D /* Sources */ = {
@@ -343,6 +491,7 @@
 		};
 		9622DAFF1F60B6C200D6AE3D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFD8A075053AF94B6E589431 /* Pods-IVYRxPhotos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K8HU92W3ZM;
@@ -356,6 +505,7 @@
 		};
 		9622DB001F60B6C200D6AE3D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BDDE37D56345D4BA30884FC /* Pods-IVYRxPhotos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K8HU92W3ZM;
@@ -369,6 +519,7 @@
 		};
 		9622DB021F60B6C200D6AE3D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 751BC1AC58F488615106A0D7 /* Pods-IVYRxPhotosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -384,6 +535,7 @@
 		};
 		9622DB031F60B6C200D6AE3D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CB353A85C1AC49892CA4FFF /* Pods-IVYRxPhotosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
