@@ -37,20 +37,29 @@ class SearchViewController: UIViewController {
   }
   
   func setupRx() {
-    searchViewModel = SearchViewModel(keywordObservable: latestKeyword)
+
+    searchViewModel = SearchViewModel( keywordObservable: latestkeyword)
     
     searchBar.rx.searchButtonClicked.subscribe(onNext: { text in
       if self.searchBar.isFirstResponder == true {
         self.view.endEditing(true)
       }
     }).addDisposableTo(disposeBag)
-    
+
     searchViewModel.searchPhotos()
-      .bind(to: tableView.rx.items) { (tableView, row, item) in
+      .bindTo(tableView.rx.items) { (tableView, row, item) in
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: IndexPath(row: row, section: 0)) as! PhotoTableViewCell
         
-        
+        cell.titleLabel.text = item.title
+        cell.photoImageView.sd_setShowActivityIndicatorView(true)
+        cell.photoImageView.sd_setIndicatorStyle(.gray)
+        cell.photoImageView.sd_setImage(with: URL(string: item.getPhotoThumbnailURL()))
+        return cell
       }
+      .addDisposableTo(disposeBag)
+    
+    
+    
   }
   
 }
