@@ -47,7 +47,7 @@ class SearchViewController: UIViewController {
     }).addDisposableTo(disposeBag)
 
     searchViewModel.searchPhotos()
-      .bindTo(tableView.rx.items) { (tableView, row, item) in
+      .bind(to: tableView.rx.items) { (tableView, row, item) in
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: IndexPath(row: row, section: 0)) as! PhotoTableViewCell
         
         cell.titleLabel.text = item.title
