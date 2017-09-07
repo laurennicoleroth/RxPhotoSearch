@@ -17,9 +17,10 @@ class SearchViewController: UIViewController {
   @IBOutlet weak var tableView: UITableView!
   
   let disposeBag = DisposeBag()
+  //    var provider: RxMoyaProvider<Flickr>!
   var searchViewModel: SearchViewModel!
   
-  var latestKeyword: Observable<String> {
+  var latestkeyword: Observable<String> {
     return searchBar.rx.text
       .orEmpty
       .debounce(0.5, scheduler: MainScheduler.instance)
@@ -28,7 +29,8 @@ class SearchViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    // Do any additional setup after loading the view, typically from a nib.
+    setupRx()
   }
   
   override func didReceiveMemoryWarning() {
@@ -37,15 +39,20 @@ class SearchViewController: UIViewController {
   }
   
   func setupRx() {
-
-    searchViewModel = SearchViewModel( keywordObservable: latestKeyword)
+    
+    
+    // Now we will setup our model
+    searchViewModel = SearchViewModel( keywordObservable: latestkeyword)
     
     searchBar.rx.searchButtonClicked.subscribe(onNext: { text in
       if self.searchBar.isFirstResponder == true {
         self.view.endEditing(true)
       }
     }).addDisposableTo(disposeBag)
-
+    
+    // And bind issues to table view
+    // Here is where the magic happens, with only one binding
+    // we have filled up about 3 table view data source methods
     searchViewModel.searchPhotos()
       .bind(to: tableView.rx.items) { (tableView, row, item) in
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: IndexPath(row: row, section: 0)) as! PhotoTableViewCell
@@ -57,9 +64,7 @@ class SearchViewController: UIViewController {
         return cell
       }
       .addDisposableTo(disposeBag)
-    
-    
-    
-  }
   
+  }
+
 }

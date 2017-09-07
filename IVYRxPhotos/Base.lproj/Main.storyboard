@@ -102,6 +102,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Photo Search" id="qWX-FI-4JB"/>
+                    <connections>
+                        <outlet property="searchBar" destination="oa5-vQ-Ujd" id="PJk-HJ-LfL"/>
+                        <outlet property="tableView" destination="8tF-Aj-mP4" id="fmh-3w-fLK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
