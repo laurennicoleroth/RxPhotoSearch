@@ -9,7 +9,7 @@
 import UIKit
 import RxCocoa
 import RxSwift
-import SDWebImage
+import Kingfisher
 
 class SearchViewController: UIViewController {
   
@@ -58,9 +58,7 @@ class SearchViewController: UIViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: IndexPath(row: row, section: 0)) as! PhotoTableViewCell
         
         cell.titleLabel.text = item.title
-        cell.photoImageView.sd_setShowActivityIndicatorView(true)
-        cell.photoImageView.sd_setIndicatorStyle(.gray)
-        cell.photoImageView.sd_setImage(with: URL(string: item.getPhotoThumbnailURL()))
+        cell.photoImageView.kf.setImage(with: URL(string: item.getPhotoThumbnailURL()))
         return cell
       }
       .addDisposableTo(disposeBag)
