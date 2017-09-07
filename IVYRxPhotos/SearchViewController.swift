@@ -38,7 +38,7 @@ class SearchViewController: UIViewController {
   
   func setupRx() {
 
-    searchViewModel = SearchViewModel( keywordObservable: latestkeyword)
+    searchViewModel = SearchViewModel( keywordObservable: latestKeyword)
     
     searchBar.rx.searchButtonClicked.subscribe(onNext: { text in
       if self.searchBar.isFirstResponder == true {
