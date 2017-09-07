@@ -12,6 +12,8 @@ target 'IVYRxPhotos' do
    pod 'SDWebImage'
    pod 'SwiftyJSON'
    pod 'Kingfisher'
+   pod 'RxDataSources'
+   pod 'RxCoreData'
 
   target 'IVYRxPhotosTests' do
     inherit! :search_paths
