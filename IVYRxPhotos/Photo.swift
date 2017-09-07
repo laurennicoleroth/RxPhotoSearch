@@ -34,6 +34,4 @@ struct Photo {
     return "https://farm\(farm!).staticflickr.com/\(server!)/\(photoID!)_\(secret!)_b.jpg"
   }
   
-  
 }
-
