@@ -7,29 +7,50 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
+import SDWebImage
 
 class SearchViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  
+  @IBOutlet weak var searchBar: UISearchBar!
+  @IBOutlet weak var tableView: UITableView!
+  
+  let disposeBag = DisposeBag()
+  var searchViewModel: SearchViewModel!
+  
+  var latestKeyword: Observable<String> {
+    return searchBar.rx.text
+      .orEmpty
+      .debounce(0.5, scheduler: MainScheduler.instance)
+      .distinctUntilChanged()
+  }
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+  }
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+  
+  func setupRx() {
+    searchViewModel = SearchViewModel(keywordObservable: latestKeyword)
+    
+    searchBar.rx.searchButtonClicked.subscribe(onNext: { text in
+      if self.searchBar.isFirstResponder == true {
+        self.view.endEditing(true)
+      }
+    }).addDisposableTo(disposeBag)
+    
+    searchViewModel.searchPhotos()
+      .bind(to: tableView.rx.items) { (tableView, row, item) in
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: IndexPath(row: row, section: 0)) as! PhotoTableViewCell
+        
+        
+      }
+  }
+  
 }
