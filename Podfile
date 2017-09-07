@@ -11,6 +11,7 @@ target 'IVYRxPhotos' do
    pod 'Alamofire'
    pod 'SDWebImage'
    pod 'SwiftyJSON'
+   pod 'Kingfisher'
 
   target 'IVYRxPhotosTests' do
     inherit! :search_paths
